@@ -8,4 +8,4 @@ jobs:
         - name: Welcome msg
           run: echo "My first github action job"
         - name: list files
-          run: ./hello.sh
+          run: ../../hello.sh
