@@ -3,7 +3,7 @@ on: push
 
 jobs:
   first_job:
-    runs-on: ubuntu-latest
+    runs-on: linuxvm1g17
     steps:
         - uses: actions/checkout@v4
         - name: Welcome msg
