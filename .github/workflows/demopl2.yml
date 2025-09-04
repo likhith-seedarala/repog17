@@ -1,0 +1,15 @@
+name: my second workflow
+on: push
+
+jobs:
+  first_job:
+    runs-on: linuxvm1g17
+    steps:
+        - uses: actions/checkout@v4
+        - name: Welcome msg
+          run: |
+            echo "My first github action job"
+            ls
+            chmod +x hello.sh
+            ./hello.sh
+            
