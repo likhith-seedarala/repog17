@@ -15,3 +15,5 @@ jobs:
           echo "The value for stepvar1: $stepVar1"
       - name : echo var1
         run: "echo \"the value for repovar1: ${{vars.repovar1 }}\""
+      - name : echo sec1
+        run : "echo \"the value for repovar1: ${{secrets.reposec1 }}\""
