@@ -1,8 +1,11 @@
 name: env-var
 on: 
-  push:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      loglevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
 
 jobs:
   job1:
