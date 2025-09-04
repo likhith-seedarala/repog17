@@ -16,7 +16,7 @@ jobs:
     needs: first-job
     concurrency:
       group: production-deployment
-      cancel-in-progress: true
+      cancel-in-progress: false
     steps:
       - name: sleep for
         run: sleep 60
