@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download dragon test file
-        uses: actions/download-artifact@v4.6.2
+        uses: actions/download-artifact@v4
         with:
           name: dragon-text-file
       - name: Verify dragon.txt
@@ -38,7 +38,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download dragon test file
-        uses: actions/download-artifact@v4.6.2
+        uses: actions/download-artifact@v4
         with:
           name: dragon-text-file
       - name: Display file
