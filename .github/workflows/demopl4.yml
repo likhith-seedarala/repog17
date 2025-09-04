@@ -17,7 +17,7 @@ jobs:
       - name: Upload Dragon tezt file
         uses: actions/upload-artifact@v4.6.2
         with:
-          name: dration-text-file
+          name: dragon-text-file
           path: dragon.txt
       - name: Pause for 30 seconds
         run: sleep 30
