@@ -10,9 +10,13 @@ jobs:
     steps:
       - name: first job
         run: echo "hello world"
+        
   sleep:
     runs-on: ubuntu-latest
     needs: first-job
+    concurrency:
+      group: production-deployment
+      cancel-in-progress: true
     steps:
       - name: sleep for
         run: sleep 600
