@@ -19,4 +19,4 @@ jobs:
       cancel-in-progress: true
     steps:
       - name: sleep for
-        run: sleep 600
+        run: sleep 60
