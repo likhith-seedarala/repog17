@@ -1,0 +1,16 @@
+name: my third workflow
+on: push
+
+jobs:
+  ascii_job:
+    runs-on: linuxvm1g17
+    steps:
+        - name: Checkout repo
+          uses: actions/checkout@v4
+        - name: list of current files
+          run: ls -ltra
+        - name: Run ASCII art script
+          run: |
+            chmod +x ascii-script.sh
+            ./ascii-script.sh
+        
