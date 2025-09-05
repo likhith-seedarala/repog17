@@ -4,7 +4,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
       - name: Use my composite action
-        uses: ./.likhith-seedarala/repog17
+        uses: ./.repog17
         with:
           node-version: '18'
