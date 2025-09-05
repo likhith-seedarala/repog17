@@ -3,7 +3,7 @@ on: push
 
 jobs:
   first_job:
-    runs-on: linuxvm1g17
+    runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v4
         - name: Welcome msg
@@ -16,7 +16,7 @@ jobs:
           run: ./hello.sh
 
   second_job:
-    runs-on: linuxvm1g17
+    runs-on: ubuntu-latest
     needs: first_job
     steps:
         - name: Welcome msg
