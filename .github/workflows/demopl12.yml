@@ -1,4 +1,4 @@
-name: reusable workflow
+name: new workflow
 on: push
 jobs:
   call-reusable:
